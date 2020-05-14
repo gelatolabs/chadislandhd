@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://fonts/dialog.tres" type="DynamicFont" id=1]
-[ext_resource path="res://textures/menu/game_title.png" type="Texture" id=2]
-[ext_resource path="res://textures/menu/bg.png" type="Texture" id=3]
+[ext_resource path="res://textures/misc/bullshit-menubg.png" type="Texture" id=1]
+[ext_resource path="res://fonts/madscrwl.tres" type="DynamicFont" id=2]
 [ext_resource path="res://scenes/levels/Menu.gd" type="Script" id=4]
 
 [node name="Menu" type="Control"]
@@ -22,25 +21,9 @@ initial_level = "res://scenes/levels/Outside.tscn"
 [node name="BG" type="TextureRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-texture = ExtResource( 3 )
+texture = ExtResource( 1 )
 expand = true
 stretch_mode = 7
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="logo" type="TextureRect" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -236.0
-margin_top = -185.634
-margin_right = 237.0
-margin_bottom = -5.63416
-texture = ExtResource( 2 )
-expand = true
-stretch_mode = 6
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -58,8 +41,8 @@ focus_neighbour_left = NodePath("../quit")
 focus_neighbour_top = NodePath("../quit")
 focus_neighbour_right = NodePath("../controls")
 focus_neighbour_bottom = NodePath("../continue")
-custom_fonts/font = ExtResource( 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_hover = Color( 0.364706, 0.364706, 0.364706, 1 )
 text = "New Game"
 flat = true
@@ -80,7 +63,7 @@ focus_neighbour_left = NodePath("../quit")
 focus_neighbour_top = NodePath("../new_game")
 focus_neighbour_right = NodePath("../controls")
 focus_neighbour_bottom = NodePath("../controls")
-custom_fonts/font = ExtResource( 1 )
+custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color_disabled = Color( 0.780392, 0.780392, 0.780392, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_hover = Color( 0.364706, 0.364706, 0.364706, 1 )
@@ -104,7 +87,7 @@ focus_neighbour_left = NodePath("../quit")
 focus_neighbour_top = NodePath("../continue")
 focus_neighbour_right = NodePath("../quit")
 focus_neighbour_bottom = NodePath("../new_game")
-custom_fonts/font = ExtResource( 1 )
+custom_fonts/font = ExtResource( 2 )
 text = "Controls"
 flat = true
 __meta__ = {
@@ -122,7 +105,7 @@ focus_neighbour_left = NodePath("../controls")
 focus_neighbour_top = NodePath("../continue")
 focus_neighbour_right = NodePath("../controls")
 focus_neighbour_bottom = NodePath("../new_game")
-custom_fonts/font = ExtResource( 1 )
+custom_fonts/font = ExtResource( 2 )
 text = "Quit"
 flat = true
 __meta__ = {

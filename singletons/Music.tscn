@@ -1,4 +1,6 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://music/menu.ogg" type="AudioStream" id=1]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends Node
@@ -14,6 +16,7 @@ var music_bus
 
 func _ready():
 	music_bus = AudioServer.get_bus_index($A.bus)
+	$mainmusic.play()
 
 
 func play(stream):
@@ -156,3 +159,6 @@ bus = "Music"
 anims/AtoB = SubResource( 2 )
 anims/BtoA = SubResource( 3 )
 anims/pause = SubResource( 4 )
+
+[node name="mainmusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )

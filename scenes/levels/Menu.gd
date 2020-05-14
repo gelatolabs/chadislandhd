@@ -4,6 +4,7 @@ export(String, FILE, "*.tscn") var initial_level = ""
 
 func _ready():
 	grab_focus()
+	#$mainthemecontinue.play(20)
 	if Globals.load_game(true):
 		$continue.disabled = false
 	else:
