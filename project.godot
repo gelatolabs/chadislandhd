@@ -44,7 +44,8 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Top Down Action RPG"
+config/name="Chad Island HD"
+config/description="Chad Island but it's in HD, bro"
 run/main_scene="res://scenes/levels/Intro.tscn"
 config/use_custom_user_dir=true
 config/icon="res://icon.png"
