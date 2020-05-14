@@ -48,6 +48,7 @@ config/name="Chad Island HD"
 config/description="Chad Island but it's in HD, bro"
 run/main_scene="res://scenes/levels/Intro.tscn"
 config/use_custom_user_dir=true
+boot_splash/image="res://textures/misc/loading.png"
 config/icon="res://icon.png"
 
 [autoload]
